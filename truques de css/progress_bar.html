@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/progress_bar.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>progress_bar</title>
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <section>
+        <h2>Creative Scroll Progress Bar</h2>
+        <p>What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            
+            Why do we use it?
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            
+            Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum odio at urna tincidunt viverra. Praesent tempor ac ligula non imperdiet. Fusce ac blandit lectus, vel ultrices erat. Aliquam vitae malesuada quam. In gravida, dui vitae ornare maximus, sapien sem mattis lorem, ut pharetra augue nulla eu quam. Nullam interdum ex sit amet imperdiet pulvinar. Fusce orci purus, auctor nec diam id, placerat mattis risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Cras at augue fermentum, euismod massa ut, malesuada metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam commodo a nisl non sodales. Vivamus ac erat ut ante commodo pulvinar vitae nec mauris. Nam eu ligula in dolor pellentesque ornare nec nec sapien. Proin et tellus pulvinar, vehicula nisl non, ultrices massa. Etiam vitae scelerisque ligula, ut pharetra nunc. Aliquam sed dapibus sapien. In vel rutrum nulla. Nam arcu neque, finibus sit amet sagittis et, ullamcorper et lorem. Vivamus orci risus, rutrum eu nisi eu, efficitur porta lorem.
+
+Mauris at lorem id enim accumsan sodales at sit amet dolor. Sed vel rutrum nibh. Nulla in hendrerit sem. Duis ac augue in erat molestie commodo at quis erat. Sed commodo ligula id consectetur pretium. Sed est leo, fringilla a accumsan feugiat, volutpat quis dolor. Cras a urna turpis.
+
+Curabitur ac augue sapien. Quisque mi quam, consectetur eu dolor ut, maximus scelerisque nisl. Quisque arcu ante, malesuada vel tempus non, pharetra eu nibh. Nulla ac arcu ut tortor malesuada porta. Vivamus dapibus, ex id lobortis varius, augue neque rutrum erat, sit amet vehicula orci lacus non ipsum. Quisque eleifend justo bibendum, cursus felis eleifend, viverra orci. Vestibulum sodales ornare erat, ac volutpat libero varius a. Morbi quis tellus ligula. Proin pharetra lorem ullamcorper finibus semper. Proin in finibus arcu. Nunc auctor at lectus non tempus. Suspendisse in lorem pharetra, auctor sapien sit amet, efficitur diam.
+
+In congue, nibh id gravida dapibus, nulla dui egestas odio, non condimentum augue nibh a enim. Morbi non hendrerit felis. Morbi iaculis urna lectus, ac faucibus ante blandit id. Aliquam et tellus vitae augue posuere tempus. Duis ac ipsum id magna convallis elementum vitae ut nulla. Vestibulum euismod quam enim, vel mattis augue tristique sed. Suspendisse potenti. Donec suscipit sit amet sem a convallis.
+        </p>
+    </section>
+
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>

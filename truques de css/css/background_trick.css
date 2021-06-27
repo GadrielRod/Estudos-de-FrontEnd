@@ -1,0 +1,7 @@
+body{
+    background-image: url(/img/background_layout.jpg);
+    background-color: #00ce2d;
+    /* 
+    O background-blend-mode junto com o background color permitem alterar as coras de imagem adicionada como background */
+    background-blend-mode: screen;
+}

@@ -1,0 +1,12 @@
+html{
+    height: 100%;
+}
+
+/* Para realizar gradient no css também se pode usar o site:
+cssgradient.io
+*/
+body{
+    height: 100%;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(133,85,198,1) 11%, rgba(190,189,78,1) 16%, rgba(252,125,70,1) 58%, rgba(252,70,70,1) 90%);
+}

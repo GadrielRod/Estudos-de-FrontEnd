@@ -1,0 +1,64 @@
+@keyframes blink{
+    0%{
+        background: violet;
+    }
+    15%{
+        background: blue;
+    }
+    30%{
+        background: indigo;
+    }
+    42%{
+        background: green;
+    }
+    58%{
+        background: yellow;
+    }
+    70%{
+        background: orange;
+    }
+    85%{
+        background: red;
+    }
+    100%{
+        background: violet;
+    }
+}
+
+@-webkit-keyframes blink{
+    0%{
+        background: violet;
+    }
+    15%{
+        background: blue;
+    }
+    30%{
+        background: indigo;
+    }
+    42%{
+        background: green;
+    }
+    58%{
+        background: yellow;
+    }
+    70%{
+        background: orange;
+    }
+    85%{
+        background: red;
+    }
+    100%{
+        background: violet;
+    }
+}
+
+div{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    animation: blink 10s infinite; 
+    /*
+    aqui você criara o delay da troca de cores*/ 
+    -webkit-animation: blink 10s infinite;
+}
+

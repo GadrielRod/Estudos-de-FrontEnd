@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(15, 19, 37);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    transition: 0.5s;
+    background: #060c21;
+}
+
+.box img{
+    width: 450px;
+    border-radius: 5px; 
+    
+}
+.btn{
+    margin: 10px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+
+
+.btn button{
+    background: rgb(0,1,40);
+    background: radial-gradient(circle, rgba(0,1,40,1) 0%, rgba(23,0,230,1) 22%, rgba(207,178,213,1) 88%, rgba(148,187,233,1) 94%, rgba(97,92,244,1) 100%);
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+
+

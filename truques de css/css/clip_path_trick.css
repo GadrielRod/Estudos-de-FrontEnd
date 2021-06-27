@@ -1,0 +1,14 @@
+body{
+    overflow: hidden;
+}
+body > #bg{
+     height: 100%;
+     width: 100%;
+     background-color: rgb(2, 211, 248);
+     /*use o site para modelar o "clip-path"
+     https://bennettfeely.com/clippy/
+     */
+     clip-path: polygon(0 0, 100% 0, 100% 58%, 53% 100%, 0 100%, 0% 50%);
+     position: absolute;
+     z-index: -1;
+}
